@@ -7,4 +7,5 @@ Then go into conditionalGame directory
 
 input: 
 venv\Sripts\activate
-python main\start.py
+cd main
+python start.py
