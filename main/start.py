@@ -19,7 +19,8 @@ def start():
     print("Now lets dive into the story, shall we?")
     print("1: Yes \n2: No")
     num = input()
-
+    
+    #choice 1
     while True:
         if int(num) == 1:
             print("Okay, Lets Begin!")
@@ -56,6 +57,7 @@ def start():
     print("1: Yes \n2: No")
     num = input()
 
+    #choice 2
     while True:
         if int(num) == 1:
             time.sleep(1)
@@ -72,5 +74,6 @@ def start():
     
     print("As you click on the game, your whole body is suddenly envoloped in bright lights.")
 
+def choice2
 
 start()
