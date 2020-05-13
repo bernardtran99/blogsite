@@ -9,6 +9,27 @@ mixer.music.load("music.mp3")
 mixer.music.play()
 
 def start():
+    
+    charclass = "none"
+
+    def warrior():
+        charclass = "Warrior"
+        print("You have chosen the path of the warrior.")
+        break
+        time.sleep(3)
+
+    def rogue():
+        charclass = "Rogue"
+        print("You have chosen the path of the warrior.")
+        break
+        time.sleep(3)
+
+    def mage():
+        charclass = "Mage"
+        print("You have chosen the path of the warrior.")
+        break
+        time.sleep(3)
+    
     print("Hello User. I am your narrator for today. What is your name?")
     name = input()
     print("Hello " + name + ". It is nice to meet you. Today, we will be going on a great adventure!")
@@ -73,7 +94,45 @@ def start():
             num = input()
     
     print("As you click on the game, your whole body is suddenly envoloped in bright lights.")
+    time.sleep(3)
+    print("You feel the rush of wind on your hair and you feel as if you are being pulled into the monitor.")
+    time.sleep(3)
+    print("As you open your eyes slowly, you are greeted with a message:")
+    time.sleep(3)
+    print("Welcome to GAME WORLD ONLINE!")
+    time.sleep(3)
+    print("You are greeted with the crowds mingling and talking in the city square and marketplace.")
+    time.sleep(3)
+    print("Your nose is overflowing with many different smells of food, people and the surroundings.")
+    time.sleep(3)
+    print("You feel your body agains the bright sunlight as clouds pass overhead.")
+    time.sleep(3)
+    print("Suddenly a text box appears in front of you.")
+    time.sleep(3)
+    print("It displays a messag, pick a class:")
+    print("1: Warrior \n2: Rogue \n3: Mage ")
+    num = input()
 
-def choice2
+    #choice 3
+    while True:
+        if int(num) == 1:
+            time.sleep(1)
+            warrior()
+            break
+        elif int(num) == 2:
+            time.sleep(1)
+            rogue()
+            break
+        elif int(num) == 3:
+            time.sleep(1)
+            mage()
+            break
+        else:
+            print("Please enter a valid number:")
+            num = input()
+
+    print("You feel a strange power surge through you like never before.")
+    time.sleep(3)
+    print("To be continued...")
 
 start()
