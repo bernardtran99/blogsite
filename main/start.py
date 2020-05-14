@@ -146,13 +146,15 @@ def start():
     time.sleep(3)
     print("You realive that a short girl, not too much younger than you, is still tapping you on the shoulder.")
     time.sleep(3)
-    print('She says, "Hello stranger, you see to have collapsed ont he floor here. You should move out of the street before people start thinking the wrong whings about you."')
+    print('She says, "Hello stranger, you see to have collapsed on the floor here."')
+    time.sleep(3)
+    print('"You should move out of the street before people start thinking bad things about you."')
     time.sleep(3)
     print('"She then hustles you to the side of the street and asks, "Well you do not seem to be from around here. What is your name?"')
     giveName = input()
 
     while True:
-        if giveName.lower == name.lower:
+        if giveName == name:
             time.sleep(1)
             print("You tell her your real name.")
             time.sleep(3)
