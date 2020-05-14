@@ -133,6 +133,8 @@ def start():
 
     print("You feel a strange power surge through you like never before.")
     time.sleep(3)
+    print("Overwhelmed with power, you suddenly feel sleepy and your body becomes limp.")
+    time.sleep(3)
     print("To be continued...")
 
 start()
