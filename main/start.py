@@ -15,19 +15,16 @@ def start():
     def warrior():
         charclass = "Warrior"
         print("You have chosen the path of the warrior.")
-        break
         time.sleep(3)
 
     def rogue():
         charclass = "Rogue"
-        print("You have chosen the path of the warrior.")
-        break
+        print("You have chosen the path of the rogue.")
         time.sleep(3)
 
     def mage():
         charclass = "Mage"
-        print("You have chosen the path of the warrior.")
-        break
+        print("You have chosen the path of the mage.")
         time.sleep(3)
     
     print("Hello User. I am your narrator for today. What is your name?")
@@ -44,14 +41,17 @@ def start():
     #choice 1
     while True:
         if int(num) == 1:
-            print("Okay, Lets Begin!")
             time.sleep(1)
+            print("Okay, Lets Begin!")
+            time.sleep(3)
             break
         elif int(num) == 2:
-            print("Goodbye! :)")
             time.sleep(1)
+            print("Goodbye! :)")
+            time.sleep(3)
             exit()
         else:
+            time.sleep(1)
             print("Please enter a valid number:")
             num = input()
     
@@ -84,12 +84,14 @@ def start():
             time.sleep(1)
             break
         elif int(num) == 2:
+            time.sleep(1)
             print("You suddenly feel a sense of regret that you did not click on the game.")
             time.sleep(3)
             print("You walk away slow and sad.")
             time.sleep(3)
             exit()
         else:
+            time.sleep(1)
             print("Please enter a valid number:")
             num = input()
     
@@ -105,11 +107,11 @@ def start():
     time.sleep(3)
     print("Your nose is overflowing with many different smells of food, people and the surroundings.")
     time.sleep(3)
-    print("You feel your body agains the bright sunlight as clouds pass overhead.")
+    print("You feel your face against the warm sunlight as clouds pass overhead.")
     time.sleep(3)
     print("Suddenly a text box appears in front of you.")
     time.sleep(3)
-    print("It displays a messag, pick a class:")
+    print('It displays a message, "Pick a class:"')
     print("1: Warrior \n2: Rogue \n3: Mage ")
     num = input()
 
@@ -128,6 +130,7 @@ def start():
             mage()
             break
         else:
+            time.sleep(1)
             print("Please enter a valid number:")
             num = input()
 
@@ -135,6 +138,34 @@ def start():
     time.sleep(3)
     print("Overwhelmed with power, you suddenly feel sleepy and your body becomes limp.")
     time.sleep(3)
+    print("2 Hours Later...")
+    time.sleep(3)
+    print("You awake to someone tapping you on the shoulder.")
+    time.sleep(3)
+    print("You immediatly startle awake and look around to see that all the townsfolk are staring concerningly in your direction.")
+    time.sleep(3)
+    print("You realive that a short girl, not too much younger than you, is still tapping you on the shoulder.")
+    time.sleep(3)
+    print('She says, "Hello stranger, you see to have collapsed ont he floor here. You should move out of the street before people start thinking the wrong whings about you."')
+    time.sleep(3)
+    print('"She then hustles you to the side of the street and asks, "Well you do not seem to be from around here. What is your name?"')
+    giveName = input()
+
+    while True:
+        if giveName.lower == name.lower:
+            time.sleep(1)
+            print("You tell her your real name.")
+            time.sleep(3)
+            break
+        else:
+            time.sleep(1)
+            print("You give a fake name.")
+            time.sleep(3)
+            break
+
+    print('She says, "Hi ' + giveName + ', nice to meet you my name is Lori."')
+    time.sleep(3)
+
     print("To be continued...")
 
 start()
