@@ -150,7 +150,7 @@ def start():
     time.sleep(3)
     print('"You should move out of the street before people start thinking bad things about you."')
     time.sleep(3)
-    print('"She then hustles you to the side of the street and asks, "Well you do not seem to be from around here. What is your name?"')
+    print('She then hustles you to the side of the street and asks, "Well you do not seem to be from around here. What is your name?"')
     giveName = input()
 
     while True:
